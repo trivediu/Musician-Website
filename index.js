@@ -6,14 +6,19 @@ Javascript file for homepage (index)*/
 
 
 document.addEventListener("DOMContentLoaded", function(event){
-    initCar();
+    //initCar();
+    colorScheme();
+
 });
 
+// document.getElementById("home").style.color = black;
+// function initCar(){
+//     $('.carousel').carousel();
+// }
 
-function initCar(){
-    $('.carousel').carousel();
+function colorScheme(){
+     document.body.style.backgroundColor = "rgb(255, 252, 255)";
 }
-
 
 
 

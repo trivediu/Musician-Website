@@ -3,16 +3,14 @@ Date: 1/21/2018
 Description: Assignment # 1 CS 290 - HTML FILE*/
 
 body{
-      background-color: rgb(252, 252, 255);
-      /* font-family: 'Poiret One', cursive; */
       font-family: 'Raleway', sans-serif;
 
-}
+} 
 
 
 .navbar-brand{
-    //background-color: rgb(252, 252, 255);
-    font-family: 'Poiret One', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
 }
 
 
