@@ -1,0 +1,11 @@
+Multi-page Navbar Implementation Idea (for navbar.js):
+https://stackoverflow.com/questions/31954089/html-css-navigation-bar-on-multiple-pages
+
+Nav Bar Implementation:
+Bootstrap
+
+Grid System:
+Bootstrap
+
+Fonts:
+Google Fonts
