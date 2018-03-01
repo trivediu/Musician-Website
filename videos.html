@@ -34,7 +34,7 @@
     <body id="home">
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#index">Uday Trivedi</a>
+            <a class="navbar-brand" href="index.html">Uday Trivedi</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,10 +44,10 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="videos.html">About</a>
+                <a class="nav-link" href="">Videos</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="transcriptions.html">Transcriptions</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
@@ -60,43 +60,93 @@
         <!-- Start Page Content Here -->
         <br>
         <h1 class="text-center">My Videos</h1>
-    
-    
+        <hr>
+
+        <p class="text-center" id="text1">On this page you will find videos of me playing guitar.  Click the 
+                appropriate buttons to view my selection of videos and be sure to scroll down to read the 
+                matching descriptions for the videos.
+            </p> 
+
+        <div class = "text-center">
+            <br>    
+            <button type="button" class="btn btn-outline-danger" value="Link" onclick="redirect()">Outside Link: Youtube Channel</button>
+        </div>
+            
+        
+        <br>
+
+        <br><br>
+        <div>
+                <p id="vidDes"><b>Current Video Description: </b> <span id="fillDes"></span></p>
+        </div>
         <div class="container">
+
+          <!-- Add buttons below to move to the next or previous video -->
+          <div class = "centerRow">
+                <div class="row">
+                    
+                    <div class="col"></div>
+                    
+                    <!-- View Previoius Video Button -->
+                    <div class="col">
+                            <button type="button" class="btn btn-primary" id="buttonPrev" onclick="prevVideo()" >Prev Video</button>
+                    </div>
+                    
+                    <!-- View Next Video Button -->
+                    <div class="col">
+                            <button type="button" class="btn btn-primary" id="buttonNext" onclick="nextVideo()">Next Video</button>
+                    </div>
+                    
+                    <div class="col"></div>
+
+                </div>
+            </div>
+
+
+            <br>
+
+
 
                 <div class= "centerRow">
                     <div class="row">
-                        <div class = "video" id="video1">
-                            <iframe width="560" height="315" src="http://www.youtube.com/embed/Bx1BxBu3QQs" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
-                        </div>
-
+                        
+                        <!-- Return to Farland Video -->
                         <div class = "video" id="video2">
                             <iframe width="560" height="315" src="http://www.youtube.com/embed/wx80P5mUiVE" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
                         </div>
+
+                        <!-- Afternoon Wave -->
+                        <div class = "video" id="video1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2V-Hp23LFeE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                                         
+                        <!-- Agua De Beber -->
+                        <div class = "video" id="video1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/BhY7D9ETraA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+                        <!-- How Deep Is Your Love -->
+                        <div class = "video" id="video1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/pWAxALmKOcU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                        <!-- Sam Smith Not The Only One -->
+                        <div class = "video" id="video1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XyS1XAv5sjs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+
+                        <!-- Let It Snow Jazz Fingerstyle Guitar -->
+                        <div class = "video" id="video1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2PYFvLGvWY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+
                     </div>
                 </div>
                 
                     
-                <!-- Add buttons below to move to the next or previous video -->
-                <div class = "centerRow">
-                    <div class="row">
-                        
-                        <div class="col"></div>
-                        
-                        <!-- View Previoius Video Button -->
-                        <div class="col">
-                                <button type="button" class="btn btn-primary" id="b1">Primary</button>
-                        </div>
-                        
-                        <!-- View Next Video Button -->
-                        <div class="col">
-                                <button type="button" class="btn btn-primary" id="b2">Primary</button>
-                        </div>
-                        
-                        <div class="col"></div>
-
-                    </div>
-                </div>
+      
 
 
 
@@ -106,20 +156,10 @@
 
 
 
-
        
 
-        <!-- <div id="video3">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wx80P5mUiVE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
 
-        <div id="video4">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wx80P5mUiVE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
 
-        <div id="video5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wx80P5mUiVE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div> -->
  
 
   

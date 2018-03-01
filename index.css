@@ -1,0 +1,12 @@
+/* This file contains some minor css corrections for the index.html file, the mail part of css code
+will be in the style.css file */
+
+
+h2{
+    font-size: 25px;
+}
+
+p{
+    padding-left: 100px;
+    padding-right: 100px;
+}
