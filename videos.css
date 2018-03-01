@@ -1,10 +1,25 @@
 /* Jay Swaminarayan - Swami Shreeji */
 
 
-#video1{
-    display: block;
+h1 {
+    text-align: right;
 }
 
-#video2{
-    display: none;
+#b1{
+    display: flex;
+    align-content: center;
 }
+
+#b2{
+    display: flex;
+    align-content: center;
+    position: relative;
+    left: 35px;
+}
+
+
+/* #b1, #b2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
