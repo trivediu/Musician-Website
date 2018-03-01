@@ -9,3 +9,9 @@ Bootstrap
 
 Fonts:
 Google Fonts
+
+
+https://webdesign.tutsplus.com/articles/super-simple-lightbox-with-css-and-jquery--webdesign-3528
+
+Hid/show
+https://stackoverflow.com/questions/2928688/how-to-hide-elements-without-having-them-take-space-on-the-page

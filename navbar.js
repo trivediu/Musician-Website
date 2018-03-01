@@ -1,6 +1,5 @@
 /*Implementation js file for including the navigation bar on multiple pages */
 
-
-$(function(event){
+$(function(){
   $("#nav-placeholder").load("nav.html");
 });
