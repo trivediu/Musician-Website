@@ -47,10 +47,10 @@
                 <a class="nav-link" href="videos.html">Videos</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="">Transcriptions</a>
+                <a class="nav-link" href="transcriptions.html">Transcriptions</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link disabled" href="">Audio</a>
                 </li>
             </ul>
             </div>
@@ -59,70 +59,44 @@
     
         <!-- Start Page Content Here -->
         <br>
-        <h1 class="text-center">My Transcriptions</h1>
+        <h1 class="text-center">Audio Samples</h1>
         <hr>
 
-        <p class="text-left" id="text1">Ear training is an important part of musical development. Transcription is the process
-            of training the hands to play what is heard in the mind. On this page you will find
-            some transcriptions of actual musical recordings I have done over the years.  In some cases I have notated the music and a download
-            link will be provided where appropriate.
+        <p class="text-center" id="text1">On this page you will find some audio samples featuring me on guitar.
             </p> 
 
         <br>
         <br>
-        <div class="text-center">
-             <h2>Transcription 1: Pat Martino - The Days of Wine and Roses</h2>
-             <p><em>My transcription of Pat Martino's guitar solo on this classic jazz standard originally composed by Henry Mancini </em></p>
-             <br>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/oZW9E9EIAQg?rel=0" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
-        </div>
-        
-        
-            <div class="text-center">
-                <span>
-                        <!-- http://i276.photobucket.com/albums/kk40/jazzgboy/DaysofWineandRosesPatMartino_0001.jpg -->
-                        <a href ="http://i276.photobucket.com/albums/kk40/jazzgboy/DaysofWineandRosesPatMartino_0001.jpg" class="lightbox_trigger">Click to View Sample</a>
-                        <button type="button" class="btn btn-danger" onclick="downloadFile('transcription1.pdf')">Download PDF File</button>                                     
-                </span>
-            </div>
 
-
-                <div id="lightbox">
-                        <p>Click to close</p>
-                        <div id="content">
-                            <img src="" />
-                        </div>
+        <!-- Add Buttons Here -->
+        <!-- Add buttons below to move to the next or previous video -->
+        <div class = "centerRow">
+                <div class="row">
+                    
+                    <div class="col"></div>
+                    
+                    <!-- View Previoius Video Button -->
+                    <div class="col">
+                            <button type="button" class="btn btn-primary" id="buttonPrev" onclick="prevAudio()" >Prev Audio Sample</button>
                     </div>
+                    
+                    <!-- View Next Video Button -->
+                    <div class="col">
+                            <button type="button" class="btn btn-primary" id="buttonNext" onclick="nextAudio()">Next Audio Sample</button>
+                    </div>
+                    
+                    <div class="col"></div>
+
+                </div>
+            </div>
+        <hr>
+        <p class = "text-center" id="vidDes"><b>Description: </b> <span id="fillDes"></span></p>
+        
+        <div class=text-center>
+            <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1673251488/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://udaytrivedi.bandcamp.com/album/electric-visions-full-length-album">Electric Visions (Full Length Album) by Uday Trivedi</a></iframe>
+        </div>
         
 
-        <hr>
-        <br>
-        <br>
-        <div class="text-center">
-             <h2>Transcription 2: Kenny Barron - All The Things You Are</h2>
-             <p><em>My transcription of Kenny Barron's piano solo on this classic jazz standard originally composed by Jerome Kern </em></p>
-             <br>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/V6t-9W4souc" frameborder="0"; encrypted-media" allowfullscreen></iframe>
-        </div>
-
-
-        <div class="text-center">
-                <span>
-                        
-                        <a href ="http://i276.photobucket.com/albums/kk40/jazzgboy/BarronAllTheThingsYouAreFinal_0001.jpg" class="lightbox_trigger">Click to View Sample</a>
-                        <button type="button" class="btn btn-danger" onclick="downloadFile('transcription2.pdf')">Download PDF File</button>                                     
-                </span>
-            </div>
-
-        <hr>
-        <br>
-        <br>
-        <div class="text-center">
-             <h2>Transcription 3: Chick Corea - King and Queen</h2>
-             <p><em>My transcription of Chick Corea's piano solo on his original composition. No sheet music available. </em></p>
-             <br>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/XRNGGrxFMXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
 
 
         <!-- Javascript Links -->
@@ -131,7 +105,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <!-- include jquery library -->
-        <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script> -->
         
         <!-- local js file -->
         <script src="transcriptions.js"></script>

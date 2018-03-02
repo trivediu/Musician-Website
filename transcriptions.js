@@ -1,9 +1,14 @@
 //Jay Swaminarayan Swami Shreeji
 
 
+//JS Script to execute download of the file
+function downloadFile(file){
+    window.location = file;
+}
 
-//The following jquery code idea is credited to:  
-//https://webdesign.tutsplus.com/articles/super-simple-lightbox-with-css-and-jquery--webdesign-3528
+// Lightbox Inspired from:  https://webdesign.tutsplus.com/articles/super-simple-lightbox-with-css-and-jquery--webdesign-3528
+// the js script was slightly modifie to prevent default opening of an overlay on the load page
+// I also had the chance to learn more about jquery upon studying this code
 jQuery(document).ready(function($) {
 	
 	$('.lightbox_trigger').click(function(e) {
@@ -20,7 +25,9 @@ jQuery(document).ready(function($) {
 		
 		If the lightbox window HTML doesn't exists, create it and insert it.
 		(This will only happen the first time around)
-		*/
+        */
+        
+        document.getElementById("lightbox").style.background = "rgba(0,0,0,.7)";
 		
 		if ($('#lightbox').length > 0) { // #lightbox exists
 			
@@ -28,7 +35,7 @@ jQuery(document).ready(function($) {
 			$('#content').html('<img src="' + image_href + '" />');
 		   	
 			//show lightbox window - you could use .show('fast') for a transition
-			$('#lightbox').show();
+			$('#lightbox').show('fast');
 		}
 		
 		else { //#lightbox does not exist - create and insert (runs 1st time only)

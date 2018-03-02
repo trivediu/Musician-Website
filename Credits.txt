@@ -15,3 +15,10 @@ https://webdesign.tutsplus.com/articles/super-simple-lightbox-with-css-and-jquer
 
 Hid/show
 https://stackoverflow.com/questions/2928688/how-to-hide-elements-without-having-them-take-space-on-the-page
+
+Download a file:
+http://thezedienblog.blogspot.com/2013/05/starting-file-download-with-javascript.html
+
+
+Form:
+https://www.formget.com/javascript-contact-form/
