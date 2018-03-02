@@ -1,5 +1,9 @@
+//This is essentially very similar in functionality to the videos.js file, but recreating a new js file
+//because I will be using different descriptions for the audio.
+
+
 document.addEventListener("DOMContentLoaded", function(event){
-   
+   //debugger;
     initVids();
     initDescriptions();
     //document.getElementById("buttonNext").addEventListener("click", nextVideo);
@@ -10,21 +14,20 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 //this function will initialize the descriptions to be shown for each video
 function initDescriptions(event){
-    var vid1 = "An original composition called 'Return to Farland' that was a featured track on my album 'Electric Visions.'";
-    var vid2 = "This is an excerpt from me performing in Laguana Beach California in a Brazilian Bossa Nova setting.";
-    var vid3 = "Performing a Brazilian Song with a vocalist - excerpt only.";
-    var vid4= "Solo Guitar arrangement of the Bee Gees popular tune How Deep Is Your Love.";
-    var vid5 = "An acoustic duo with me on guitar and a vocalist covering Sam Smith's 'Not the Only One'.";
-    var vid6 = "Solo Jazz Guitar arrangement of the popular holiday song 'Let It Snow'. "
+    var vid1 = "In 2012 I had the opportunity to collaborate with Warner Records in LA and rearrange Usher's hit single Climax";
+    var vid2 = "My collaboration with Netwwerk Records to remix Wanting Qu for a re-release of her single in Asia";
+    var vid3 = "My collaboration with Swedish House Producer Rasmus Faber to rearrange his song featuring me on guitar.";
+    var vid4 = "My collaboration with Blue Note Records (New York) to rearrange Jose James for reissue";
+    var vid5 = "My version of 'Over the Rainbow' from my Album 'Electric Visions'.  Click the track buttons to hear other songs from the album";
 
-    desArr = [vid1, vid2, vid3, vid4, vid5, vid6];
+    desArr = [vid1, vid2, vid3, vid4, vid5];
  
     document.getElementById("fillDes").innerHTML = desArr[0];
 }
 
 
 function nextVideo(event){
-    //debugger;
+    debugger;
 
     //hide the current video
     vidArr[currVid].style.display = "none";
@@ -81,8 +84,7 @@ function redirect(event){
 //Basic Function that will hide all the videos on the page, except the first one
 function initVids(event)
 {
-
-    //Get an Array of all existing videos
+    //Get an Array of all existing audios
     vidArr = document.getElementsByClassName("video");
 
     

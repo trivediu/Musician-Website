@@ -1,6 +1,3 @@
-//Jay Swaminarayan Swami Shreeji
-
-
 //JS Script to execute download of the file
 function downloadFile(file){
     window.location = file;

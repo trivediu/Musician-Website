@@ -42,69 +42,19 @@ p{
 {
   content: '>';
   font-size: 55px;
-  color: black;
+  color: white;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
-  color: black;
+  color: white;
 }
 
 .carousel-indicators li{
-    background-color:black;
+    background-color:white;
 }
 
 .carousel-indicators .active{
-    background-color: grey;
+    background-color: darkred;
 }
-
-/* table {
-    border-style: solid;
-}
-
-th {
-    border-style: solid;
-}
-
-td {
-    border-style: solid;
-    background-color: black;
-    color: yellow;
-    text-align: center;
-}
-
-
-
-.outer-content{
-    background-color: pink;
-    float: left;
-    position: relative;
-    width: 75%;
-    height: 40px;
-    margin-top: 20px;
-}
-
-.inner-content {
-    position: relative;
-    width: 75%;
-    height: 50%;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    top: 25%;
-}
-
-.formGetPost{
-    position:relative;
-    margin-top: 100px;
-}
-
-fieldset{
-    margin: 1em 0.7em 0.3em;
-}
-
-tr:nth-of-type(2n) td, tr:nth-of-type(2n) th{
-    background:red;
-} */
