@@ -1,3 +1,5 @@
+/* Uday Trivedi */
+
 h1 {
     text-align: right;
 }
@@ -8,7 +10,6 @@ h1 {
 }
 
 span{
-    //background-color: lightgrey;
     color: black;
 }
 
@@ -32,4 +33,26 @@ span{
     left: 35px;
 }
 
+#myProgress {
+    width: 100%;
+    background-color: white;
+}
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: white;
+    text-align: center; /* To center status bar horizontally  */
+    line-height: 30px; /* To center status bar vertically */
+    color: white; 
+}
+
+#loadNotice{
+    font-size: 15px;
+}
+
+#status, #mybar2{
+    color:white;
+    background-color: rgb(185, 23, 23);
+}
 

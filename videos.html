@@ -1,3 +1,5 @@
+<!-- Uday Trivedi -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +31,8 @@
 </head>
 
     <body id="home">
-        
+
+                <!-- standard menu -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand" href="index.html">Uday Trivedi</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,10 +69,19 @@
         <br>
         <h1 class="text-center">My Videos</h1>
         <hr>
+        <!-- load status bar will go here -->
+        <p id="loadNotice">Video Load Status: 
+                <span id ="status">LOADING ALL VIDEOS</span>
+                <span id ="mybar2">10%</span>
+                <!-- <span id ="mybar3">LOADED</span> -->
+        </p>
 
-        <p class="text-center" id="text1">On this page you will find videos of me playing guitar.  Click the 
-                appropriate buttons to view my selection of videos and be sure to scroll down to read the 
-                matching descriptions for the videos.
+        <hr>
+        <p class="text-left" id="text1">On this page you will find videos of me playing guitar.  Click the 
+                appropriate buttons to view my selection of videos and be sure to read the 
+                matching descriptions for each video. Go ahead and try playing multiple embedded youtube videos.
+                You will notice that only one video will play at a time.  This is achieved courtesy of 
+                the Youtube API.
             </p> 
 
         <div class = "text-center">
@@ -107,65 +119,28 @@
                 </div>
             </div>
 
-
-            <br>
-
-
-
+            <!-- Over here each video div element is placed -->
+            <br>       
                 <div class= "centerRow">
-                    <div class="row">
-                        
-                        <!-- Return to Farland Video -->
-                        <div class = "video" id="video2">
-                            <iframe width="560" height="315" src="http://www.youtube.com/embed/wx80P5mUiVE" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+                        <div class="row">
+                                <div class="video" id="player1"></div>
+                                <div class="video" id="player2"></div>
+                                <div class="video" id="player3"></div>
+                                <div class="video" id="player4"></div>
+                                <div class="video" id="player5"></div>
+                                <div class="video" id="player6"></div>
+
                         </div>
-
-                        <!-- Afternoon Wave -->
-                        <div class = "video" id="video1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2V-Hp23LFeE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                                         
-                        <!-- Agua De Beber -->
-                        <div class = "video" id="video1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/BhY7D9ETraA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-                        <!-- How Deep Is Your Love -->
-                        <div class = "video" id="video1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/pWAxALmKOcU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-
-                        <!-- Sam Smith Not The Only One -->
-                        <div class = "video" id="video1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XyS1XAv5sjs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-
-                        <!-- Let It Snow Jazz Fingerstyle Guitar -->
-                        <div class = "video" id="video1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2PYFvLGvWY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-
-                    </div>
                 </div>
-                
-                    
-      
-
-
-
-
-
-        </div> <!-- closing div for container -->
-
 
 
        
 
 
 
- 
+                <div id="myProgress">
+                        <div id="myBar">10%</div>
+                </div>
 
   
  
@@ -183,9 +158,22 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <!-- include jquery library -->
-        <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script> -->
         <!-- Jay Swaminarayan -->
         <!-- local js file -->
+
+
+
+        <!-- the below .js file uses the youtube api to ensure that only 1 single video will play at a time -->
+        <script src="videosSinglePlay.js"></script>
+
+        <!-- The below js file is to implement button click events, and show/hide appropriate blocks etc. -->
         <script src="videos.js"></script>
+
+        <!-- The below js file is to implement button click events, and show/hide appropriate blocks etc. -->
+        <script src="loadingBar.js"></script>
+
+
+  
     </body>
 </html>

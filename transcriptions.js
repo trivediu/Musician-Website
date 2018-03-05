@@ -5,7 +5,7 @@ function downloadFile(file){
 
 // Lightbox Inspired from:  https://webdesign.tutsplus.com/articles/super-simple-lightbox-with-css-and-jquery--webdesign-3528
 // the js script was slightly modifie to prevent default opening of an overlay on the load page
-// I also had the chance to learn more about jquery upon studying this code
+// I also had the chance to learn more about jquery by implementing this.
 jQuery(document).ready(function($) {
 	
 	$('.lightbox_trigger').click(function(e) {

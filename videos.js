@@ -1,9 +1,12 @@
+// Uday Trivedi
+//The main js file for videos.html that implements the video descriptions and button functions
+
 document.addEventListener("DOMContentLoaded", function(event){
-   
+    
     initVids();
     initDescriptions();
-    //document.getElementById("buttonNext").addEventListener("click", nextVideo);
-    //document.getElementById("buttonPrev").addEventListener("click", prevVideo);
+    move(event);
+    
 
 });
 
@@ -109,4 +112,45 @@ function initVids(event)
     // document.getElementById("video2").style.display = "block";
 
     // event.stopPropagation();
+}
+
+
+
+
+
+function move(event) {
+    var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
+
+function move() {
+    var elem = document.getElementById("myBar"); 
+    var elem2 = document.getElementById("myBar2"); 
+    // document.getElementById("mybar2").innerHTML = "hello"; 
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+            document.getElementById("status").innerHTML = "All Videos Loaded!";
+            document.getElementById("status").style.backgroundColor = "green";
+            document.getElementById("status").style.color = "white";
+            document.getElementById("mybar2").style.backgroundColor = "green";
+            document.getElementById("mybar2").style.color = "white";
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1 + '%';
+            document.getElementById("mybar2").innerHTML = width * 1 + '%';
+        }
+    }
 }
