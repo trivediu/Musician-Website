@@ -35,24 +35,28 @@ span{
 
 #myProgress {
     width: 100%;
-    background-color: white;
+    background-color: grey;
 }
 
 #myBar {
     width: 10%;
     height: 30px;
-    background-color: white;
+    background-color: black;
     text-align: center; /* To center status bar horizontally  */
     line-height: 30px; /* To center status bar vertically */
-    color: white; 
+    color: black; 
 }
 
 #loadNotice{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 #status, #mybar2{
     color:white;
     background-color: rgb(185, 23, 23);
+}
+
+.hidden{
+    display: none;
 }
 

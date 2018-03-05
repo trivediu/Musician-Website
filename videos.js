@@ -146,7 +146,24 @@ function move() {
             document.getElementById("status").style.color = "white";
             document.getElementById("mybar2").style.backgroundColor = "green";
             document.getElementById("mybar2").style.color = "white";
-        } else {
+        }       
+        
+  
+        
+        else if (width < 51){
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1 + '%';
+            document.getElementById("mybar2").innerHTML = width * 1 + '%';
+                if (width === 50){
+                    document.getElementById("mybar2").style.color = "black";
+                    document.getElementById("mybar2").style.backgroundColor = "rgb(244,206,66)";
+                    document.getElementById("status").style.color = "black";
+                    document.getElementById("status").style.backgroundColor = "rgb(244,206,66)";
+                }
+        }        
+        
+        else{
             width++; 
             elem.style.width = width + '%'; 
             elem.innerHTML = width * 1 + '%';
