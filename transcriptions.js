@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
 			//create HTML markup for lightbox window
 			var lightbox = 
 			'<div id="lightbox">' +
-				'<p>Click to close</p>' +
+				//'<p>Click to close</p>' +
 				'<div id="content">' + //insert clicked link's href into img src
 					'<img src="' + image_href +'" />' +
 				'</div>' +	
